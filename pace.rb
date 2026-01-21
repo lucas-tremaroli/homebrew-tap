@@ -5,21 +5,21 @@
 class Pace < Formula
   desc "A CLI tool for task management, notes, focus timer, and more"
   homepage "https://github.com/lucas-tremaroli/pace"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.0.0/pace_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "19383e84c8bbd8c916e4b0fcf73f121e3f9364479976c28921d825211b39d864"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.1.0/pace_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "dd0074316753f7677d61b0113f42a5faaf3768a57058e02a3a77fe22b59ac6b1"
 
       def install
         bin.install "pace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.0.0/pace_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "be64ec78065f270879b33fe92d81e3c8cec4c755a4a1ecd1cf5cf5f67f45cb25"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.1.0/pace_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "a8c2f12dd73735d068088b6a6fe11235e5b5e01b0161089cc1bbbc8b48798a34"
 
       def install
         bin.install "pace"
@@ -29,15 +29,15 @@ class Pace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.0.0/pace_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "ef3fa517219ac83fc8c38936433184581c48bfbacfd64cb3281d59ad9cbfa110"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.1.0/pace_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "da4d7ec3b857f1719405041883531de64ee331ff27f915cb230dde9215a19e97"
       def install
         bin.install "pace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.0.0/pace_1.0.0_Linux_arm64.tar.gz"
-      sha256 "9f677f2750ebe162a4da518b731b69596ef060ef5fed00f36517697082ce9264"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.1.0/pace_1.1.0_Linux_arm64.tar.gz"
+      sha256 "c393863a1b9788fde4639958cbab0ecd567a98091412d704b2356bbff11dfbac"
       def install
         bin.install "pace"
       end
