@@ -5,21 +5,21 @@
 class Pace < Formula
   desc "A CLI tool for task management, notes, focus timer, and more"
   homepage "https://github.com/lucas-tremaroli/pace"
-  version "1.8.0"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.8.0/pace_1.8.0_Darwin_x86_64.tar.gz"
-      sha256 "cc4b7f7361fee1ddd68cb8a96d6a3398191b587da54a87fd8bb47e6a9b9a34a9"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.9.0/pace_1.9.0_Darwin_x86_64.tar.gz"
+      sha256 "fe5c6aa0757366e8d00778c94d3041b0fe8db98cf834710e92dfc5dd698a6b5a"
 
       define_method(:install) do
         bin.install "pace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.8.0/pace_1.8.0_Darwin_arm64.tar.gz"
-      sha256 "775593146cd7ca55c868c6f907f6bac3c7e9846d2f6f4e4d2c67045387b64261"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.9.0/pace_1.9.0_Darwin_arm64.tar.gz"
+      sha256 "ad39e62d28b1f83ac6fc0d5f8bd21eafa6254d1fdff2893cdae3ed4c2fe60a1b"
 
       define_method(:install) do
         bin.install "pace"
@@ -29,15 +29,15 @@ class Pace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.8.0/pace_1.8.0_Linux_x86_64.tar.gz"
-      sha256 "ef45208edc75f0ea7854248a245919519c54aa0d3a1d4f3f620080ca7dc67a26"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.9.0/pace_1.9.0_Linux_x86_64.tar.gz"
+      sha256 "30f43a5bd53f55efc50366010a15e3e02999fb1815efc38f4cbfacade5624fbe"
       define_method(:install) do
         bin.install "pace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.8.0/pace_1.8.0_Linux_arm64.tar.gz"
-      sha256 "4330d185df0834a1d2d6ab6c2f16665fd2bd3cbc9d71b1bd2b2b7796bf5baefb"
+      url "https://github.com/lucas-tremaroli/pace/releases/download/v1.9.0/pace_1.9.0_Linux_arm64.tar.gz"
+      sha256 "9a46b9273a23d20504d6d66c5b13f99382332f4e88c1be684fdab86317e4e476"
       define_method(:install) do
         bin.install "pace"
       end
